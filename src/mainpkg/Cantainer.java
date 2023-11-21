@@ -1,21 +1,13 @@
 package mainpkg;
 
-public abstract class Cantainer {
-	private int id;
-	private String departurePort;
-	private double capacity;
-	
-	
-	public void Load()
-	{
-		
-	}
-	
-	public void UnLoad()
-	{
-		
-	}
-	
-	
+public interface Cantainer {
+  int getId();
+
+  double getCapacity();
+
+  double calculatePrice();
+  void updateCantainerCount(Ship ship);
+
+  void displayCantainerDetail(Ship ship);
 
 }
